@@ -1,0 +1,138 @@
+J/AJ/131/2478       M31 and M33 UBVRI photometry             (Massey+, 2006)
+================================================================================
+A survey of Local Group galaxies currently forming stars.
+I. UBVRI photometry of stars in M31 and M33.
+    Massey P., Olsen K.A.G., Hodge P.W., Strong S.B., Jacoby G.H.,
+    Schlingman W., Smith R.C.
+   <Astron. J., 131, 2478-2496 (2006)>
+   =2006AJ....131.2478M
+================================================================================
+ADC_Keywords: Galaxies, nearby ; Photometry, CCD ; Photometry, UBVRI
+Keywords: catalogs - galaxies: individual (M31, M33) -
+          galaxies: stellar content - stars: early-type - supergiants - surveys
+
+Abstract:
+    We present UBVRI photometry obtained from Mosaic images of M31 and M33
+    using the Kitt Peak National Observatory 4m telescope. We describe our
+    data reduction and automated photometry techniques in some detail, 
+    as we will shortly perform a similar analysis of other Local Group
+    galaxies. The present study covered 2.2deg^2^ along the major axis of
+    M31 and 0.8deg^2^ on M33, chosen so as to include all of the regions
+    currently active in forming massive stars. We calibrated our data
+    using photometry from the Lowell 1.1m telescope, and this external
+    method resulted in millimagnitude differences in the photometry of
+    overlapping fields, providing some assurance that our photometry is
+    reliable. The final catalog contains 371781 and 146622 stars in M31
+    and M33, respectively, where every star has a counterpart in (at
+    least) the B, V, and R passbands. Our survey goes deep enough to
+    achieve 1%-2% photometry at 21mag (corresponding to stars more massive
+    than 20M_{sun}_) and achieves <10% errors at ~U ~B ~V ~R ~I 23mag.
+
+Description:
+    The data were taken with the Mosaic CCD camera at the prime focus of
+    the 4m Mayall telescope. The observing began in 2000 August and ran
+    through 2002 September.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+table4.dat    142   371781   M31 Catalog
+table5.dat    145   146622   M33 Catalog
+table8.dat    124      172   M31 members confirmed by spectroscopy
+table9.dat    127      361   M33 members confirmed by spectroscopy
+refs.dat       87       22   References
+--------------------------------------------------------------------------------
+
+See also:
+    J/AJ/115/1894 : M31A eclipsing binaries and Cepheids (Stanek+ 1998)
+    J/AJ/115/1016 : M31B eclipsing binaries and Cepheids (Kaluzny+ 1998)
+    J/AJ/117/2810 : M31C eclipsing binaries and Cepheids (Stanek+, 1999)
+    J/AJ/118/346  : M31D eclipsing binaries and Cepheids (Kaluzny+ 1999)
+    J/AJ/118/2211 : M31F eclipsing binaries and Cepheids (Mochejska+ 1999)
+    J/AJ/122/1383 : DIRECT BVI photometry in M31 (Mochejska+, 2001)
+    J/AJ/121/861  : BVI photometry of central part of M33 (Macri+, 2001)
+    J/AJ/121/870  : BVI photometry of Variables in M33 (Macri+, 2001)
+    J/AJ/121/2032 : DIRECT variables in M33A field (Mochejska+, 2001)
+    J/AJ/122/2477 : DIRECT variables in M33B field (Mochejska+, 2001)
+    J/AJ/126/175  : M31Y eclipsing binaries and Cepheids (Bonanos+, 2003)
+
+Byte-by-byte Description of file: table4.dat table5.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   --      LGGS      LGGS designation, JHHMMSS.ss+DDMMSS.s
+  21- 22  I2    h       RAh       Right ascension (J2000)
+  24- 25  I2    min     RAm       Right ascension (J2000)
+  27- 31  F5.2  s       RAs       [0/60] Right ascension (J2000)
+      33  A1    --      DE-       Declination sign (J2000)
+  34- 35  I2    deg     DEd       Declination (J2000)
+  37- 38  I2    arcmin  DEm       Declination (J2000)
+  40- 43  F4.1  arcsec  DEs       [0/60] Declination (J2000)
+  45- 50  F6.3  mag     Vmag      Johnson V magnitude
+  52- 57  F6.3  mag   e_Vmag      V error
+  59- 64  F6.3  mag     B-V       Johnson B-V magnitude
+  66- 71  F6.3  mag   e_B-V       B-V error
+  73- 78  F6.3  mag     U-B       ?=99.999 Johnson U-B colour index
+  80- 85  F6.3  mag   e_U-B       ?=99.999 U-B error
+  87- 92  F6.3  mag     V-R       Kron-Cousins V-R colour index
+  94- 99  F6.3  mag   e_V-R       V-R error
+ 101-106  F6.3  mag     R-I       ?=99.999 Kron-Cousins R-I colour index
+ 108-113  F6.3  mag   e_R-I       ?=99.999 R-I error
+ 115-116  I2    --      nV        Number of V measurements
+ 118-119  I2    --      nB        Number of B measurements
+ 121-122  I2    --      nU        Number of U measurements
+ 124-125  I2    --      nR        Number of R measurements
+ 127-128  I2    --      nI        Number of I measurements
+ 130-139  A10   --      SpType    MK Spectral Type (if available)
+ 141-145  A5    --    r_SpType    References for spectal type, in refs.dat file
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table8.dat table9.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 15  A15   --      MType     Spectral Classification (1)
+  17- 35  A19   --      LGGS      LGGS designation, JHHMMSS.ss+DDMMSS.s
+  37- 38  I2    h       RAh       Right ascension (J2000)
+  40- 41  I2    min     RAm       Right ascension (J2000)
+  43- 47  F5.2  s       RAs       Right ascension (J2000)
+      49  A1    --      DE-       Declination (J2000)
+  50- 51  I2    deg     DEd       Declination (J2000)
+  53- 54  I2    arcmin  DEm       Declination (J2000)
+  56- 59  F4.1  arcsec  DEs       Declination (J2000)
+  62- 66  F5.2  mag     Vmag      Johnson V magnitude
+  68- 72  F5.2  mag     B-V       Johnson B-V colour index
+  74- 78  F5.2  mag     U-B       ?=99.99 Johnson U-B colour index
+  80- 85  F6.3  mag     V-R       Kron-Cousins V-R magnitude
+  87- 91  F5.2  mag     R-I       ?=99.99 Kron-Cousins R-I colour index
+  93-102  A10   --      SpType    MK Spectral Type
+     104  A1    --      Key       [UM] Note (2)
+ 106-121  A16   --      CrossID   Cross-identification (3)
+ 123-127  A5    --    r_SpType    References for spectral type, in refs.dat file
+--------------------------------------------------------------------------------
+Note (1): The membership of the "RSG Candidates" is uncertain.
+Note (2): Note as follows:
+      U = Uncertain identification
+      M = Multiple on a 1" spatial scale
+Note (3): Coordinates substantially improved for M33WR14, M33WR15, 
+          M33WR112, M33WR113, M33WR116, and M33WR117.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: refs.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    ---     Ref       Reference number
+   4- 22  A19   ---     BibCode   BibCode
+  24- 44  A21   ---     Aut       Author's name
+  45- 87  A43   ---     Com       Comments
+--------------------------------------------------------------------------------
+
+History:
+  * 22-May-2007: From electronic version of the journal
+  * 29-Aug-2007: Specification of the actual photometric system in this ReadMe
+                 (Johnson-Kron-Cousins)
+================================================================================
+(End)                  Greg Schwarz [AAS], Patricia Vannier [CDS]    22-May-2007
