@@ -1,0 +1,50 @@
+data available from - http://cdsarc.u-strasbg.fr/viz-bin/Cat?cat=J%2FMNRAS%2F264%2F273&target=brief&
+
+J/MNRAS/264/273     CCD photometry of NGC 1261   (Ferraro+ 1993)
+================================================================================
+On the giant, horizontal and asymptotic branches of galactic globular
+clusters - V. CCD photometry of NGC 1261.
+    Ferraro F.R., Clementini G., Fusi Pecci F., Vitiello E., Buonanno R.
+   <Mon. Not. R. Astron. Soc. 264, 273 (1993)>
+   =1993MNRAS.264..273F (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Clusters, globular ; Photometry, CCD
+Keywords: stars: abundances - stars: evolution -
+          Hertzsprung-Russel (HR) diagram -
+          globular clusters: individual: NGC 1261
+
+Description:
+    BV CCD photometry is presented for 3352 stars (18 variables) in the
+    globular cluster NGC 1261.
+
+Objects:
+    -----------------------------------------
+       RA (2000) DE    Designation(s)
+    -----------------------------------------
+     03 11.7   -55 14  NGC 1261 = C 0310-554
+    -----------------------------------------
+
+File Summary:
+--------------------------------------------------------------------------------
+  FileName   Lrecl  Records Explanations
+--------------------------------------------------------------------------------
+ReadMe       80        .    This file
+table1       36     3380    Final magnitudes, colours & positions for 3334 stars
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table1
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  4  I4    ---     No        Sequence number
+   6- 11  F6.3  mag     Vmag      V magnitude
+  13- 18  F6.3  mag     B-V       B-V color index
+  20- 27  F8.3  pix     Xpos      X position (1)
+  29- 36  F8.3  pix     Ypos      Y position (1)
+--------------------------------------------------------------------------------
+Note (1): The coordinates refer to the cluster center (1 pixel = 0.47 arcsec)
+--------------------------------------------------------------------------------
+
+Courtesy:  F.R. Ferraro <FERRARO@astbo3.bo.astro.it>
+================================================================================
+(End)                                          Patricia Bauer [CDS]  23-Aug-1996

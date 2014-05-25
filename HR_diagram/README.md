@@ -14,3 +14,4 @@ implemented so far -
 to be implemented - 
 
 * HR diagram for stars from the tycho/hipparchos catalogue!
+* HR diagram for the globular cluster NGC 1261 and M31 & M33!
