@@ -26,5 +26,6 @@ for i in xrange(4,316):
     b_v[j] = tmp
     j += 1
     
-plt.xlim(2,-1)    
+plt.xlim(-1,2)    
+plt.ylim(8,-10)
 plt.scatter(b_v,m_v,s=5)
