@@ -8,9 +8,9 @@ multiple data sets containing color and absolute magnitude of stars -
 implemented so far - 
 
 * HR diagram for the 314 stars
+* HR diagram for the 5000 star sample.
+* HR diagram for the hyades cluster.
 
 to be implemented - 
 
-* HR diagram for the 5000 star sample.
-* HR diagram for the hyades cluster.
 * HR diagram for stars from the tycho/hipparchos catalogue!
