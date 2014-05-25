@@ -1,0 +1,109 @@
+<title>Observers Handbook Table</title>
+<h1>THE BRIGHTEST STARS</h1>
+<h2> ROBERT F. GARRISON AND BRIAN BEATTIE </h2>
+<br>
+
+DATA AVAILABLE online at - 
+http://www.astro.utoronto.ca/~garrison/oh.html
+
+The above available data has been cleaned for easy extraction of parameters. It's a sad thing that data cleaning is still an compulsory task!
+
+<h2>Observers Handbook 1996 </h2>
+<hr>
+<p>
+The 314 stars brighter than apparent magnitude 3.55 in both
+hemispheres are listed with 1996.5 positions.
+Several spectral classifications have been updated by Garrison as
+part of his continuing contribution to the Michigan Spectral Catalogue
+project.  Data on the five Cepheid variable stars appearing in this
+table have also been updated following work by Fernie and Beattie 
+on the Galactic Cepheid Database (World Wide Web URL:  
+<a href="http://ddo.astro.utoronto.ca/cepheids.html">
+http://ddo.astro.utoronto.ca/cepheids.html</a>).
+A few additional changes have been made because of better 
+available data.
+
+<br>
+</p><h4> Star</h4>  If the star is a visual double, the letter A
+indicates that the
+data are for the brighter component.  The brightness and separation
+of the second component (B) are given in the last column.  Sometimes the
+double is too close to be conveniently resolved and the data
+refer to the combined light (AB); in interpreting such data the magnitudes
+of the two components must be considered.
+
+<p>
+</p><h4> Apparent Visual Magnitude (V).</h4>  These magnitudes are based on photoelectric 
+observations.  The V filter is yellow and corresponds roughly to the
+response of the eye.  The photometric system is that of 
+Johnson and Morgan in <i> Ap.J.</i>, vol. 117, p. 313, 1953.  It is
+as likely as not that the true magnitude is within 0.03 mag.
+of the quoted figure, on the average.  Variable stars are indicated with
+a ``v''.  The type of variability, range and period are given in the
+remarks.
+
+<p>
+</p><h4> Colour Index (B-V).</h4>  The blue magnitude, B,
+is the brightness of a 
+star as observed photoelectrically through a blue filter.  The difference 
+B-V is therefore a measure of the colour of a star.  There is a close
+relation  between B-V and the spectral type, but some of the stars are 
+reddened by interstellar dust.  The probable error of a value of B-V
+is about 0.02 mag at most.
+
+<p>
+</p><h4> Spectral Classification.</h4>  A ``temperature''
+type (O,B,A,F,G,K,M) is
+given first, followed by a finer subtype (0-9) and a ``luminosity''
+class (Roman numerals I-IV, with an ``a'' or ``b'' added occasionally
+to indicate slightly brighter or fainter).  The sequences are in the sense that
+the O stars are hottest, M stars are coolest, Ia stars are the most 
+luminous supergiants, III stars are giants and V stars are the most numerous;
+the V's are known as dwarfs or main-sequence stars.  Other symbols used in
+the column are:  ``p'' for peculiar; ``e'' for hydrogen emission; ``m'' for 
+strong metallic lines; ``f'' for broad, non-hydrogen emission in hot stars; and
+``n'' or ``nn'' for unusually broad lines (= rotation).  The table 
+contains the best types available, either from the literature or
+from my own plates.
+
+<p>
+</p><h4> Parallax, Proper Motion and Position Angle. </h4> 
+From ``The Bright Star Catalogue'' 
+by Dorrit
+Hoffleit and Carlos Jaschek, <i> Yale University Press</i>, 1982.  Parallaxes
+in which the decimal point is preceded by the letter ``D'' are ``dynamical 
+parallaxes''  (i.e. determined through Kepler's laws rather than
+by trigonometric measurement).  Proper motions given are
+the absolute value of the vector resultant from the individual-coordinate
+proper motions given in ``The Bright Star Catalogue''.  The Position Angle
+indicates the direction of the proper motion with an angle measured in
+degrees from the north through east.
+
+<p>
+</p><h4> Absolute Visual Magnitude and Distance in Light-Years.</h4>  If the
+parallax is greater that 0.05" the distance and absolute magnitude correspond
+to this trigonometric parallax.  Otherwise a generally more accurate absolute
+magnitude and distance were obtained from a new (by the author,
+unpublished) calibration of the spectral classification; distances determined
+in this way are called ``spectroscopic parallaxes''.  In
+a few cases (the Hyades,
+Orion, and Scorpius clusters), the cluster distances are given; these are 
+indicated by parentheses.  The effect of the absorption of light was corrected
+by comparing the spectral classification and the B-V, using an
+intrinsic-colour calibration by the author (unpublished).
+
+<p>
+</p><h4> Radial Velocity</h4> From ``The Bright Star Catalogue'' 
+referenced above.
+The symbol ``V'' indicates a variable velocity and 
+an orbit is usually not known.
+On the other hand, ``SB'' indicates a spectroscopic binary, which is an
+unresolved system whose duplicity is revealed by periodic
+oscillations of the lines in its spectrum and an orbit is generally known.  
+If the lines of both stars are detectable, the symbol ``SB2'' is used.
+``+'' indicates motion away from, ``--'' towards, the observer.
+
+<p>
+</p><h4>Remarks</h4>  These contain data on companions and variability as well
+as notes on the spectra.  Traditional names have been selected from ``The
+Bright Star Catalogue''.  
