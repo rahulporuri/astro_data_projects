@@ -1,0 +1,6 @@
+SELECT TOP 100000
+   p.objid,p.ra,p.dec,p.u,p.g,p.r,p.i,p.z,
+   p.l, p.b,
+   s.specobjid, s.class, s.z as redshift
+FROM PhotoObj AS p
+   JOIN SpecObj AS s ON s.bestobjid = p.objid
