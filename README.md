@@ -4,8 +4,10 @@ There is a lot of free data online and a lot of places to access it from. One of
 
 implemented so far -
 * the HR diagram. data sets include 300 stars, 5000 stars, globular cluster dada and links to data from the Hipparchos and Tycho catalogues! 
+* sdss object colors - 100,000 objects from the SDSS DR10.
+* celestial plotting using matplotlib and galactic coordinates for quasars from the SDSS DR10.
 
 to be implemented - 
-* galactic distribution of stars and the evident spiral arms!
+* galactic distribution of stars and the evident spiral arms! - need data on distance/parallax and l,b.
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
 * color-distance plots for galaxy clusters.
