@@ -11,3 +11,5 @@ to be implemented -
 * galactic distribution of stars and the evident spiral arms! - need data on distance/parallax and l,b.
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
 * color-distance plots for galaxy clusters.
+
+GitHub!!!!!!
