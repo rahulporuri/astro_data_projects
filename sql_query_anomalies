@@ -1,0 +1,24 @@
+select
+plateX.plate, plateX.mjd, 
+PhotoObj.ra, PhotoObj.dec, PhotoObj.ObjID, 
+PhotoObj.modelMag_u, PhotoObj.modelMag_g, PhotoObj.modelMag_r, PhotoObj.modelMag_i, PhotoObj.modelMag_z, 
+specObj.fiberID, specObj.z
+
+from
+PhotoObj, specObj, plateX
+
+where
+specObj.bestObjid = PhotoObj.ObjID 
+AND plateX.plateID = specObj.plateID 
+AND specObj.class = 'qso' 
+AND specObj.zWarning = 0 
+AND PhotoObj.modelMag_u < 22.3 
+AND PhotoObj.modelMag_g < 22.6 
+AND PhotoObj.modelMag_r < 22.7 
+AND PhotoObj.modelMag_i < 22.4 
+AND PhotoObj.modelMag_z < 20.5
+AND PhotoObj.modelMag_u - PhotoObj.modelMag_g > 1.0
+AND 0.96 < specObj.z 
+AND specObj.z < 0.98
+# AND 1.58 < specObj.z 
+# AND specObj.z < 1.6
