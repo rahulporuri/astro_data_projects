@@ -1,0 +1,270 @@
+data from - http://cdsarc.u-strasbg.fr/viz-bin/qcat?J/A+A/367/111
+paper at - http://www.aanda.org/articles/aa/full/2001/07/aa10000/aa10000.html
+
+J/A+A/367/111       A Hipparcos study of the Hyades cluster  (de Bruijne+, 2001)
+================================================================================
+A Hipparcos study of the Hyades open cluster:
+improved colour-absolute magnitude and Hertzsprung-Russell diagrams.
+     de Bruijne J.H.J., Hoogerwerf R., de Zeeuw P.T.
+    <Astron. Astrophys. 367, 111 (2001)>
+    =2001A&A...367..111D
+================================================================================
+ADC_Keywords: Clusters, open ; Radial velocities ; Stars, distances ;
+              Parallaxes, trigonometric
+Keywords: astrometry - stars: distances - stars: fundamental parameters -
+          stars: Hertzsprung-Russell diagram -
+          Galaxy open clusters and associations: individual: Hyades
+
+Description:
+    Hipparcos trigonometric parallaxes fix distances to individual stars
+    in the Hyades cluster with an accuracy of about 6 percent. We use the
+    Hipparcos and Tycho-2 proper motions, which have a larger relative
+    precision than the Hipparcos trigonometric parallaxes, to derive 3
+    times more precise distance estimates, by assuming that all members
+    share the same space motion. These so-called secular parallaxes are,
+    as a set, statistically consistent with the Hipparcos parallaxes
+    (Section 6).
+
+    Table A1 contains, for all 218 members identified by Perryman et al.
+    (1998A&A...331...81P; see also Cat. <J/A+A/331/81>; see Sections 4.1
+    and 5.1), the trigonometric parallaxes, the Hipparcos and Tycho-2
+    secular parallaxes, their errors and goodness-of-fit parameters
+    (Sections 2.2 and 5.4), as well as fundamental stellar parameters
+    (Section 9) based on the Hipparcos secular parallaxes and the V-band
+    magnitudes (field H5) and B-V colours (field H37) listed in the
+    Hipparcos Catalogue (1997HIP...C......0E; Cat. <I/239>).
+
+    Table A2 lists 15 new Hyades candidates (see Sections 4.2 and 5.2)
+    selected by the membership methods developed by de Bruijne
+    (1999MNRAS.306..381D) and Hoogerwerf et al. (1999MNRAS.306..394H) which
+    use proper motion and trigonometric parallax data. Based on photometric,
+    radial velocity, and secular parallax data, we conclude that only one
+    of these stars (HIP 19757) is a likely new member (see Sections 4.2
+    and 5.2 for details).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+tablea1.dat      141      218   Hyades members from Perryman+
+                                 (1998, Cat. <J/A&A/331/81>)
+notes.dat         79       85   Individual notes to table A1
+tablea2.dat      115       15   New Hyades candidate members
+--------------------------------------------------------------------------------
+
+See also:
+   I/239        : The Hipparcos and Tycho Catalogues (ESA 1997)
+   I/259        : The Tycho-2 Catalogue (Hog+ 2000)
+   III/190      : WEB Catalog of Radial Velocities (Duflot+ 1995)
+   J/A+A/331/81 : Hyades membership (Perryman+ 1998)
+   http://www.ari.uni-heidelberg.de/dmubin : The {Delta}{mu} binary homepage
+
+Byte-by-byte Description of file: tablea1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label    Explanations
+--------------------------------------------------------------------------------
+   1-  6  I6    ---       HIP      Hipparcos number (field H1 in Cat. <I/239>)
+   8- 11  I4    ---       TYC1     ? Tycho identifier (part 1; field T1 in
+                                    Cat. <I/239>; see also Cat. <I/259>)
+  13- 16  I4    ---       TYC2     ? Tycho identifier (part 2)
+      18  I1    ---       TYC3     ? Tycho identifier (part 3)
+  20- 24  F5.2  mas       Plx      Hipparcos trigonometric parallax
+                                    (field H11 in Cat. <I/239>)
+  26- 30  F5.2  mas     e_Plx      Standard error in Plx
+                                    (field H16 in Cat. <I/239>)
+  32- 36  F5.2  mas       PlxsH    Hipparcos secular parallax
+  38- 41  F4.2  mas     e_PlxsH    Error in PlxsH
+  43- 48  F6.2  ---     q_PlxsH    Goodness-of-fit parameter of PlxsH (G1)
+  50- 54  F5.2  mas       PlxsT    ? Tycho-2 secular parallax
+  56- 59  F4.2  mas     e_PlxsT    ? Error in PlxsT
+  61- 66  F6.2  ---     q_PlxsT    ? Goodness-of-fit parameter of PlxsT (G1)
+  68- 71  F4.2 solMass    Mass     Stellar mass from section 5.3 in Perryman+
+                                     (1998A&A...331...81P).
+                                     See also Section 9.4.5
+  73- 78  F6.4 [K]        logTeff  ? Logarithm of effective temperature
+  80- 85  F6.4 [K]      e_logTeff  ? Error in logTeff
+  87- 92  F6.3  mag       BCVmag   ? Bolometric correction in V-band
+  94- 98  F5.3  mag     e_BCVmag   ? Error in BCVmag
+ 100-105  F6.3 [solLum]   logLum   ? Logarithm of luminosity
+ 107-111  F5.3 [solLum] e_logLum   ? Error in logLum
+ 113-117  F5.3 [cm/s2]    logg     ? Logarithm of surface gravity
+ 119-123  F5.3 [cm/s2]  e_logg     ? Error in logg
+     125  I1    ---     n_Mass1    [0-1] Note on stellar mass:
+                                    1: optical companion was not counted in
+                                       the mass
+     127  I1    ---     n_Mass2    [0-1] Note on stellar mass:
+                                    1: particularly uncertain mass (from
+                                       Perryman+; 1998A&A...331...81P)
+     129  I1    ---     n_RVel     [0-2] Note on binarity from radial velocities
+                                         1: spectroscopic binary (2)
+                                         2: radial velocity variable (2)
+     131  I1    ---     n_CCDM     [0-3] Hipparcos historical CCDM status flag
+                                           (field H56 in Cat. <I/239>) (G2)
+     133  I1    ---       MultFlag [0-7] Hipparcos duplicity flags H59 and H61
+                                          (Cat. <I/239>) (G3)
+     135  I1    ---       varType  [0-5] Hipparcos photometric variability
+                                          flag H52 (Cat. <I/239>) (5)
+     137  I1    ---       Cal      [0-2] Flag indicating which calibration was
+                                          used to obtain logTeff, BCVmag,
+                                          logLum, and logg:
+                                          1: calibration 1 (Section 9.4.2)
+                                          2: calibration 2 (Section 9.4.3)
+     139  I1    ---       Memb     [0-8] Membership information (6)
+     141  I1    ---       Note     [0-1] Index to notes:
+                                          1: note in notes.dat file
+--------------------------------------------------------------------------------
+Note (2): The notes on binarity from radial velocities (n_RVel) were taken from
+    table 2 (column s) in Perryman et al. (1998A&A...331...81P; see also
+    Cat. <J/A+A/331/81>).
+
+Note (5): Hipparcos photometric variability type (HvarType; field H52 in
+           Cat.  <I/239>):
+     0: H52=C or H52=<BLANK>: no variability detected ("constant") or the
+               entry could not be classified as variable or constant
+     1: H52=D: duplicity-induced variability
+     2: H52=M: possibly micro-variable (amplitude <0.03mag)
+     3: H52=P: periodic variable
+     4: H52=R: V-I colour index was revised due to variability analysis
+     5: H52=U: unsolved variable which does not fall in the other categories.
+Note (6): Membership information (Memb), taken from Perryman+ (column x in
+      table 2; 1998A&A...331...81P; Cat. <J/A+A/331/81>):
+     0: non-member
+     1: member based on proper motion and radial velocity
+     2: member based on proper motion only
+     3: member based on proper motion and radial velocity but rejected by
+        de Bruijne (1999MNRAS.306..381D)
+     4: member based on proper motion and radial velocity but rejected by
+        Hoogerwerf+ (1999MNRAS.306..394H)
+     5: member based on proper motion and radial velocity but rejected by
+        de Bruijne and Hoogerwerf+
+     6: member based on proper motion only but rejected by de Bruijne
+     7: member based on proper motion only but rejected by Hoogerwerf+
+     8: member based on proper motion only but rejected by de Bruijne and
+        Hoogerwerf+.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: notes.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  5  I5    ---     HIP       Hipparcos (Cat. <I/239>) number
+   7- 79  A73   ---     Note      Text of the note
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: tablea2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+   1-  6  I6    ---     HIP      Hipparcos identifier (field H1 in Cat. <I/239>)
+   8- 11  I4    ---     TYC1     Tycho identifier (part 1; field T1 in Cat.
+                                     <I/239>; see also Cat. <I/259>)
+  13- 16  I4    ---     TYC2     Tycho identifier (part 2)
+      18  I1    ---     TYC3     Tycho identifier (part 3)
+  20- 25  F6.2  mas     Plx      Hipparcos trigonometric parallax
+                                  (field H11 in Cat. <I/239>)
+  27- 30  F4.2  mas   e_Plx      Standard error in Plx
+                                  (field H16 in Cat. <I/239>)
+  32- 37  F6.2  km/s    RVel     ? Radial velocity
+  39- 42  F4.2  km/s  e_RVel     ? Error in RVel
+      44  A1    ---   r_RVel     ? [1,S] Source of RVel (1)
+  46- 47  A2    ---   n_RVel     ? [RV] RV: Radial velocity variable. From
+                                   Duflot+ (1995A&AS..114..269D; Cat. <III/190>)
+      49  A1    ---   n_CCDM     ? [HIM] Historical CCDM status flag
+                                    (field H56 in Cat. <I/239>) (G2)
+      51  A1    ---     MultFlag ? [CGOVX S] Double/Multiple Systems flag
+                                     (fields H59 and H61 in Cat. <I/239>) (G3)
+  53- 57  F5.2  pc      R3D      Three-dimensional distance from the cluster
+                                 center of mass defined by 180 stars (see
+                                 table 3 in Perryman+; 1998A&A...331...81P),
+                                 based on Hipparcos trigonometric parallax (Plx)
+  59- 63  F5.2  ---     Stat     ? Kinematic membership statistic from
+                                    Perryman+ (1998A&A...331...81P) (4)
+      65  I1    ---     Memb1    ? [0-1] Final membership assigned by Perryman+
+                                     (1998A&A...331...81P):
+                                     0: non-member
+                                     1: member (no entries in this table)
+  67- 70  F4.2  ---     Memb2    ? [0-1] Membership `probability' from
+                                     Hoogerwerf+ (1999MNRAS.306..394H; their
+                                     symbol S in their section 2.4)
+  72- 75  F4.2  ---     Memb3    ? [0-1] Membership probability from de Bruijne
+                                     (1999MNRAS.306..381D; his symbol p in his
+                                     section 2.4.4)
+  77- 82  F6.2  mas     PlxsH    Hipparcos secular parallax
+  84- 87  F4.2  mas   e_PlxsH    Error in PlxsH
+  89- 94  F6.2  ---   q_PlxsH    Goodness-of-fit parameter of PlxsH (G1)
+  96-101  F6.2  mas     PlxsT    ? Tycho-2 secular parallax
+ 103-106  F4.2  mas   e_PlxsT    ? Error in PlxsT
+ 108-113  F6.2  ---   q_PlxsT    ? Goodness-of-fit parameter of PlxsT (G1)
+     115  A1    ---     Note     ? Remarks (6)
+--------------------------------------------------------------------------------
+Note (1): Source of radial velocity (r_RVel):
+     1: Griffin+ 1977AJ.....82..176G
+                 1978AJ.....83.1114G
+                 1981AJ.....86..588G
+                 1982A&A...106..221G
+                 1985AJ.....90..609G
+                 1988AJ.....96..172G
+       See table 2 (Cat. <J/A+A/331/81>) in Perryman+ (1998A&A...331...81P)
+        for details
+     S: SIMBAD (http://cdsweb.u-strasbg.fr/Simbad.html).
+Note (4): Kinematic membership statistic (Stat) from Perryman+
+     (1998A&A...331...81P; their eq. 16). A value of 14.16 corresponds to
+     a 3{sigma} deviation.
+Note (6): Remarks (Note):
+     HIP 20777: T Tauri-type star with two components (SIMBAD);
+                 Tycho-1 (Cat. <I/239>) number suppressed in Tycho-2
+                 Catalogue (Cat.  <I/259>)
+     HIP 20904: Primary component in double system (SIMBAD)
+     HIP 25730: T Tauri-type star (SIMBAD).
+--------------------------------------------------------------------------------
+
+Global notes:
+Note (G1): Goodness-of-fit parameters q_PlxsH and q_PlxsT of secular
+    parallaxes PlxsH and PlxsT (see Section 2.2 for details). q_PlxsH > 9
+    and/or q_PlxsT > 9 indicate a bad fit (>3{sigma} deviation), possibly
+    indicative of multiplicity and/or non-membership (Section 2.2).
+
+Note (G2): Historical CCDM status flag (n_CCDM) indicating whether the
+    star was previously known or classified by Hipparcos to have resolved
+    components (from field H56 in Cat. <I/239>).
+    See also table 2 (column t) in Perryman+ (1998A&A...331...81P; see
+    also Cat. <J/A+A/331/81>).
+    1 or I: H56=I: system previously identified as multiple in HIC
+              (Cat. <I/196> annex 1)
+    2 or M: H56=M: miscellaneous (system identified after publication
+              of HIC, Cat. <I/196>)
+    3 or H: H56=H: determined multiple by Hipparcos, previously unknown.
+
+Note (G3): Double/Multiple Systems flag (MultFlag; [CGOVX]) indicating
+    the relevant part of the Hipparcos Double and Multiple Systems Annex
+    (field H59 in Cat. <I/239>), supplemented by a flag indicating a
+    suspected binary detected by Hipparcos ([S]; field H61 in Cat.
+    <I/239>). See also table 2 (column u) in Perryman+
+    (1998A&A...331...81P; see also Cat. <J/A+A/331/81>).
+    1 or C: H59=C: solutions for the components
+    2 or G: H59=G: acceleration or higher order terms
+    3 or O: H59=O: orbital solutions
+    4 or V: H59=V: variability-induced movers (apparent motion arises from
+              variability)
+    5 or X: H59=X: stochastic solution (probably astrometric binaries with
+              short period)
+    6 or S: H61=S: suspected binary in Hipparcos Catalogue (field H61)
+    7     : H59=X and H61=S.
+--------------------------------------------------------------------------------
+
+Acknowledgements: Jos de Bruijne <jdbruijn@estsa2.estec.esa.nl>
+
+References:
+   Hoogerwerf & Aguilar, 1999MNRAS.306..394H
+   de Bruijne,           1999MNRAS.306..381D
+   Wielen et al.,        2000, IAU Symp. 200, p144
+   McClure,              1982ApJ...254..606M
+   Lastennet et al.,     1999A&A...349..485L
+   Soederhjelm,          1999A&A...341..121S
+   Peterson & Solensky,  1987ApJ...315..286P
+   Simon & Ayres,        2000ApJ...539..325S
+   Torres et al.,        1997ApJ...485..167T
+   Torres et al.,        1997ApJ...479..268T
+================================================================================
+(End)                                          Patricia Bauer [CDS]  04-Dec-2000

@@ -1,0 +1,15 @@
+select
+plateX.plate, plateX.mjd, 
+PhotoPrimary.ra, PhotoPrimary.dec, PhotoPrimary.l, PhotoPrimary.b, PhotoPrimary.ObjID, 
+specObj.fiberID, specObj.z into mydb.MyTable from PhotoPrimary, specObj, plateX
+
+where
+specObj.bestObjid = PhotoPrimary.ObjID 
+AND plateX.plateID = specObj.plateID 
+AND specObj.class = 'qso' 
+AND specObj.zWarning = 0 
+AND PhotoPrimary.modelMag_u < 22.3 
+AND PhotoPrimary.modelMag_g < 22.6 
+AND PhotoPrimary.modelMag_r < 22.7 
+AND PhotoPrimary.modelMag_i < 22.4 
+AND PhotoPrimary.modelMag_z < 20.5

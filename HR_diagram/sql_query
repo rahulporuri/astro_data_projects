@@ -1,0 +1,11 @@
+select TOP 1000
+PhotoObj.ObjID,
+PhotoObj.b, PhotoObj.l,
+PhotoObj.modelMag_g, PhotoObj.modelMag_r
+
+from
+PhotoObj, specObj
+
+where
+specObj.bestObjid = PhotoObj.ObjID 
+AND specObj.class = 'star'

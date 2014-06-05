@@ -1,0 +1,118 @@
+data from - http://www.astro.lu.se/~lennart/MVstars.html
+
+   <title>Hipparcos stars with good absolute magnitudes</title>
+</head>
+<body alink="#FF0000" bgcolor="#FFFFFF" link="#0000FF" text="#000000" vlink="#800080">
+
+<h3>
+<b><i><font face="verdana,arial"><font size="+1">Hipparcos stars with good
+absolute magnitudes</font></font></i></b></h3>
+<font face="Verdana,arial">The table below list 5007 stars in the Hipparcos
+Catalogue with absolute visual magnitudes (M<sub>V</sub>) good to about
++-0.1 mag, as calculated from parallax.</font>
+<p><font face="Verdana,arial">The stars were selected according to the
+following criteria:</font>
+</p><ul>
+<li>
+<font face="Verdana,arial">relative standard error in parallax (or distance)
+less than 5%: sigma(par)/par &lt; 0.05</font></li>
+
+<li>
+<font face="Verdana,arial">standard error in colour index sigma(B-V) &lt;
+0.025 mag</font></li>
+
+<li>
+<font face="Verdana,arial">apparently single star (no DMSA flag)</font></li>
+</ul>
+<font face="verdana,arial">This selection is very close to the one
+used to construct the HR diagram in <a href="http://www.rssd.esa.int/hipparcos/images/f3_5_001.pdf">Figure
+3.5.1</a> of the Hipparcos Catalogue (Vol. 1).</font>
+<p><font face="Verdana,arial">Table description:</font>
+<br><font face="Verdana,arial"></font>&nbsp;
+<table bgcolor="#FFFFCC" border="" width="100%">
+<tbody><tr>
+<td><b><font face="Verdana,arial">Column header</font></b></td>
+
+<td><b><font face="Verdana,arial">Description</font></b></td>
+
+<td><b><font face="Verdana,arial">Unit</font></b></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">HIP</font></td>
+
+<td><font face="Verdana,arial">star number in Hipparcos Catalogue</font></td>
+
+<td><font face="Verdana,arial">-</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">V</font></td>
+
+<td><font face="Verdana,arial">visual apparent magnitude</font></td>
+
+<td><font face="Verdana,arial">mag</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">RA</font></td>
+
+<td><font face="Verdana,arial">Right Ascension</font></td>
+
+<td><font face="Verdana,arial">deg</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">Dec</font></td>
+
+<td><font face="Verdana,arial">Declination</font></td>
+
+<td><font face="Verdana,arial">deg</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">Par</font></td>
+
+<td><font face="Verdana,arial">measured parallax</font></td>
+
+<td><font face="Verdana,arial">milli-arcsec</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">B-V</font></td>
+
+<td><font face="Verdana,arial">colour index</font></td>
+
+<td><font face="Verdana,arial">mag</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">M_V</font></td>
+
+<td><font face="Verdana,arial">visual absolute magnitude</font></td>
+
+<td><font face="Verdana,arial">mag</font></td>
+</tr>
+
+<tr>
+<td><font face="Verdana,arial">Sp</font></td>
+
+<td><font face="Verdana,arial">spectral classification</font></td>
+
+<td><font face="Verdana,arial">-</font></td>
+</tr>
+</tbody></table>
+
+</p><p><font face="Verdana,arial"><b>NOTE:&nbsp; </b>HIP, V, RA, Dec, Par,
+and B-V are taken directly from the Hipparcos Catalogue (ESA SP-1200, 1997).&nbsp;
+The absolute magnitudes are calculated by the formula</font><font face="Verdana,arial"></font>
+</p><p><font face="Verdana,arial">M_V = V + 5*log(Par/100)</font><font face="Verdana,arial"></font>
+</p><p><font face="Verdana,arial">(i.e., interstellar extinction is neglected).&nbsp;
+The spectral classification is taken from the Hipparcos Input Catalogue
+(Turon et al. 1992, ESA SP-1136).</font>
+
+</p><p><font face="Verdana,arial"><b>Acknowledgement:&nbsp; </b>
+Data for this table were extracted by means of <i>Celestia 2000</i> (Turon et al. 1998, ESA SP-1220).
+</font>
+<br><a name="Top of table"></a>
+</p><pre>
