@@ -6,7 +6,6 @@ implemented so far -
 * the HR diagram. data sets include 300 stars, 5000 stars, globular cluster dada and links to data from the Hipparchos and Tycho catalogues! 
 * sdss object colors - 100,000 objects from the SDSS DR10.
 * celestial plotting using matplotlib and galactic coordinates for quasars from the SDSS DR10.
-* sdss anomalous object coordinate, color and spectra. <- needs to be moved to quasar_colors
 
 to be implemented - 
 * galactic distribution of stars and the evident spiral arms! - need data on distance/parallax and l,b.
