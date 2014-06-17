@@ -8,8 +8,18 @@ implemented so far -
 * celestial plotting using matplotlib and galactic coordinates for quasars from the SDSS DR10.
 
 to be implemented - 
-* galactic distribution of stars and the evident spiral arms! - need data on distance/parallax and l,b.
+* galactic distribution of stars and the evident spiral arms! - distance/parallax and l,b/ra,dec data from hipparcos/tycho.
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
-* color-distance plots for galaxy clusters.
+* color-distance plots for galaxy clusters to prove that older galaxies lie at the center and that younger ones are at the outskirts.
 
-GitHub!!!!!!
+* implemeting the cosmic distance ladder, starting with 
+  * stellar parallax, hipparcos/tycho data already available.
+  * stellar color data available from HR diagrams for main sequence fitting
+  * RR lyrae and cepheid variable data needed
+  * supernova data needed
+  * Tully-Fisher data needed
+  * hubble law data needed
+  * (am i missing anything?)
+
+for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
+
