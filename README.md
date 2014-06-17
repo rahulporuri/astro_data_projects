@@ -17,7 +17,7 @@ to be implemented -
   * stellar color data available from HR diagrams for main sequence fitting
   * RR lyrae and cepheid variable data needed
   * supernova data needed
-  * Tully-Fisher data needed
+  * Tully-Fisher data needed. data on the [HST key project paper](http://iopscience.iop.org/0004-637X/529/2/698/fulltext/) & [HST key project data](http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2000ApJ...529..698S&db_key=AST&link_type=DATA), [TF calibrator galaxies](http://iopscience.iop.org/0067-0049/128/2/461/fulltext/) and [WISE TF](http://iopscience.iop.org/0004-637X/771/2/88/article)
   * hubble law data needed
   * (am i missing anything?)
 
