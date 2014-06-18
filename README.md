@@ -11,6 +11,7 @@ to be implemented -
 * galactic distribution of stars and the evident spiral arms! - distance/parallax and l,b/ra,dec data from hipparcos/tycho.
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
 * color-distance plots for galaxy clusters to prove that older galaxies lie at the center and that younger ones are at the outskirts.
+* voyager data available [here](http://web.mit.edu/space/www/voyager.html) and [here](http://web.mit.edu/afs/athena/org/s/space/www/voyager/voyager_data/voyager_data.html).
 
 implemeting the cosmic distance ladder, starting with
  * stellar parallax, hipparcos/tycho data already available.
