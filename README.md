@@ -12,6 +12,9 @@ to be implemented -
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
 * color-distance plots for galaxy clusters to prove that older galaxies lie at the center and that younger ones are at the outskirts.
 * voyager data available [here](http://web.mit.edu/space/www/voyager.html) and [here](http://web.mit.edu/afs/athena/org/s/space/www/voyager/voyager_data/voyager_data.html).
+* get pulsar data to show the consequences of folding(SNR), measure period of pulsars, their intensity and DM! (ORT?!)
+* get polarmetric data to show how polarization is studied - polarization due to the dust in a star forming region (ARIES)
+
 
 implemeting the cosmic distance ladder, starting with
  * stellar parallax, hipparcos/tycho data already available.
