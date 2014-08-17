@@ -17,4 +17,7 @@ for j in xrange(1,len(data)):
 
 plt.scatter(b_v,M_v,s=5)
 plt.xlim(4,3.5)
+plt.xlabel('B-V color')
+plt.ylabel('V absolute magnitude')
+plt.title('HR diagram of the hyades cluster')
 plt.show()

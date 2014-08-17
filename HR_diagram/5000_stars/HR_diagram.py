@@ -17,4 +17,7 @@ for j in xrange(1,len(data)):
 
 plt.scatter(b_v,M_v,s=5)
 plt.ylim(20,-5)
+plt.ylabel('V absolute magnitude')
+plt.xlabel('B-V color')
+plt.title('HR diagram for 5000 stars')
 plt.show()
