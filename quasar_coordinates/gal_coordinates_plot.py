@@ -30,3 +30,11 @@ plt.grid(True)
 plt.title('Quasars from the SDSS DR10')
 plt.xlabel('galactic longitude')
 plt.ylabel('galactic latitude')
+
+"""
+in gnuplot,
+gnuplot> set term wxt
+gnuplot> set datafile separator ','
+gnuplot> plot 'MyTable_rahul.poruri.csv' u 3:4 or 5:6 for a simple pllot of (ra, dec) or (l, b).
+need to figure out how to do projections in gnuplot
+"""
