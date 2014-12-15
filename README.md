@@ -25,4 +25,7 @@ implemeting the cosmic distance ladder, starting with
  * hubble law data needed
  * (am i missing anything?)
 
+* observed rotation velocity of stars in a galaxy and a comparision to that estimated from kepler's law to show the effect of dark matter
+* data to prove the M-\sigma relation, to satisfy the curiosity of amateurs interested in blackholes
+
 for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
