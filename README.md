@@ -28,4 +28,12 @@ implemeting the cosmic distance ladder, starting with
 * observed rotation velocity of stars in a galaxy and a comparision to that estimated from kepler's law to show the effect of dark matter
 * data to prove the M-\sigma relation, to satisfy the curiosity of amateurs interested in blackholes
 
+the necessary packages or libraries can be installed by running the shell script in this directory, personal_config.sh.
+it can be run using 
+
+""""
+$ chmod +x personal_config.sh
+$ bash personal_config.sh
+""""
+
 for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
