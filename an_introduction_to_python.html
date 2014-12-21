@@ -1527,6 +1527,28 @@ init_mathjax();
 <body>
 
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>If you do not want to be bothered with the python working environment and wish to just start directly on the python prompt, be my guest. You can skip the first few sections on virtual environments and jump to hello world.</p>
+<ul>
+<li>virtual environments</li>
+<li>pip and easy_install</li>
+<li>working environments. pyide, pycharm, anaconda, canopy, ipython and ipython-notebook to name a few</li>
+<li>hello world</li>
+<li>python lists and operations on list like sum of elements, mean.</li>
+<li>introduction to loops.</li>
+<li>introduce to numpy arrays</li>
+<li>introduce libraries in python and how to use them</li>
+<li>interesting libraries</li>
+<li>numpy array utilities, convenience functions and numpy operations similar to those done above</li>
+<li>array to list and list to array conversion</li>
+<li>loading data from a file and saving data to a file</li>
+<li>plotting and matplotlib utilities</li>
+<li>over plotting and subplots</li>
+<li>defining functions and function usage</li>
+<li>timeit in python</li>
+<li>references</li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
 <blockquote>
 <p>Know what version you are working with</p>
 </blockquote>
@@ -1534,11 +1556,23 @@ init_mathjax();
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[52]:
+In&nbsp;[1]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">scipy</span>
+<span class="c">#import numpy as np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="c">#import matplotlib.pyplot as plt</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="c"># similar to</span>
+<span class="c"># #include &lt;stdlib.h&gt; in c</span>
 <span class="k">print</span> <span class="s">&#39;the version of python we are using is&#39;</span><span class="p">,(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;the version of numpy is &#39;</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">version</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span>\
+        <span class="s">&#39;the version of scipy is&#39;</span><span class="p">,</span> <span class="n">scipy</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">version</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span>\
+        <span class="s">&#39;the version of matplotlib is &#39;</span><span class="p">,</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">__version__</span>
+<span class="k">print</span> <span class="s">&#39;the version of IPython being used is&#39;</span><span class="p">,</span> <span class="n">IPython</span><span class="o">.</span><span class="n">__version__</span>
 </pre></div>
 
 </div>
@@ -1553,103 +1587,9 @@ In&nbsp;[52]:
 <pre>
 the version of python we are using is 2.7.6 (default, Mar 22 2014, 22:59:38) 
 [GCC 4.8.2]
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[39]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">scipy</span>
-<span class="c">#import numpy as np</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="c"># similar to</span>
-<span class="c"># #include &lt;stdlib.h&gt; in c</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[56]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;the version of numpy is &#39;</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">version</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span>\
-        <span class="s">&#39;the version of scipy is&#39;</span><span class="p">,</span> <span class="n">scipy</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">version</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span>\
-        <span class="s">&#39;the version of matplotlib is &#39;</span><span class="p">,</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
 the version of numpy is  1.8.2 
 the version of scipy is 0.13.3 
 the version of matplotlib is  1.4.0
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[49]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">IPython</span>
-<span class="k">print</span> <span class="s">&#39;the version of IPython being used is&#39;</span><span class="p">,</span> <span class="n">IPython</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
 the version of IPython being used is 1.2.1
 
 </pre>
@@ -1680,25 +1620,23 @@ the version of IPython being used is 1.2.1
 <p>plt.plot('args')</p>
 </blockquote>
 <p>for convenience.</p>
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="virtual-env">virtual env</h1>
 <p>It might happen that multiple projects that you are working on have dependencies on various libraries of different versions. to avoid such problems and, more generally, for peace of mind and for a good workflow in python, it is suggested one starts working with <a href="https://virtualenv.pypa.io/en/latest/virtualenv.html">python virtual environments</a>. Installation and usage are mentioned in the link aforementioned and virtual environments help isolating your python installation from the system.</p>
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="packages-or-libraries">packages or libraries</h1>
 <p>Coming to installing various packages, it is suggested that one uses package managers such as <a href="https://virtualenv.pypa.io/en/latest/virtualenv.html">pip</a> or <a href="https://virtualenv.pypa.io/en/latest/virtualenv.html">easy_install</a> instead of the standard <code>apt-get install</code> or <code>yum install</code>. It is easier to search for packages using pip and to keep track or delete packages as well.</p>
+<p>Coming to the usage, you can work on python from the command line, from a file or on an IDE. For example <a href="https://store.continuum.io/cshop/anaconda">anaconda</a>, <a href="https://www.enthought.com/products/canopy/">canopy</a> by Enthought, <a href="http://blog.itopchiyev.com/products/pyide-for-iphone/">PyIDE</a>, <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> or <a href="ipython.org/">IPython</a>.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Coming to the usage, you can work on python from the command line, from a file or on an IDE. For example <a href="https://store.continuum.io/cshop/anaconda">anaconda</a>, <a href="https://www.enthought.com/products/canopy/">canopy</a> by Enthought, <a href="http://blog.itopchiyev.com/products/pyide-for-iphone/">PyIDE</a>, <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> or <a href="ipython.org/">IPython</a>.</p>
+<h1 id="printing">printing</h1>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[3]:
+In&nbsp;[2]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;hello world&#39;</span>
+<span class="c"># it&#39;s that simple</span>
 </pre></div>
 
 </div>
@@ -1724,7 +1662,46 @@ hello world
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[10]:
+In&nbsp;[4]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">var</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">print</span> <span class="s">&#39;var =&#39;</span><span class="p">,</span> <span class="n">var</span>
+<span class="c"># inorder to print var</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+var = 4
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p>mention how to format output to a specific length or to a specific precision!!!</p>
+</blockquote>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="loops-in-python">loops in python</h1>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1733,10 +1710,6 @@ In&nbsp;[10]:
 <span class="k">print</span> <span class="s">&#39;sum of first ten integers = &#39;</span><span class="p">,</span> <span class="n">temp</span>
 <span class="c"># note that in python, the loop starts from 0 and ends at n-1</span>
 <span class="c"># in the above mentioned case, the loop goes from 0 to 9!</span>
-<span class="c"># operations involving arrays can make use of len(array)</span>
-<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
-    <span class="sd">&#39;&#39;&#39;do something ...&#39;&#39;&#39;</span>
 </pre></div>
 
 </div>
@@ -1762,10 +1735,55 @@ sum of first ten integers =  10
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[14]:
+In&nbsp;[13]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
+<div class="highlight"><pre><span class="c"># operations involving arrays can make use of len(array)</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
+    <span class="k">print</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+1
+2
+3
+4
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="plotting">plotting</h1>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[16]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="c"># as mentioned above,</span>
+<span class="c"># library.module.submodule.fuction(arg1, arg2)</span>
+<span class="c"># is the way in which we can access the various functions in python libraries</span>
+<span class="c"># in this case, the plotting feature is in matplotlib.pyplot</span>
+<span class="c"># and instead of having to write matplotlib.pyplot everytime</span>
+<span class="c"># we refer to it using plt instead</span>
+<span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
 <span class="c"># is why i love ipython-notebooks</span>
 <span class="c"># we can embed plots between the code!#</span>
 </pre></div>
@@ -1781,6 +1799,10 @@ In&nbsp;[17]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="s">&#39;o&#39;</span><span class="p">)</span>
+<span class="c"># plt.show()</span>
+<span class="c"># if you&#39;re not working on ipython,</span>
+<span class="c"># you will have to run plt.show()</span>
+<span class="c"># to display the plot</span>
 </pre></div>
 
 </div>
@@ -1796,7 +1818,7 @@ In&nbsp;[17]:
 
 
 <pre>
-[&lt;matplotlib.lines.Line2D at 0xb1462e8c&gt;]
+[&lt;matplotlib.lines.Line2D at 0xb14c1d2c&gt;]
 </pre>
 
 </div>
@@ -1902,15 +1924,21 @@ RK5CYII=
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>coming to arrays, one has two options. a python list or a numpy array. a python list and a numpy array differ on a fundamental level at which they handle. a numpy array stores data in sequential memory addressess where as a python list doesn't. This difference leads to a difference in time that it takes to operate on large arrays. It is suggested that one use numpy arrays instead of python lists for this specific reason.</p>
+<blockquote>
+<p>instead of this boring plot, introduce the random library and functions in python to generate and then plot a random sample. also show examples of scatter plots and histograms.</p>
+</blockquote>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>coming to arrays, one has two options. a python list or a numpy array. a python list and a numpy array differ on a fundamental level at which they handle data. a numpy array stores data in sequential memory addressess, similar to C, where as a python list doesn't. This difference leads to a difference in time that it takes to operate on large arrays. It is suggested that one use numpy arrays instead of python lists for this specific reason.</p>
 <p>Although, if for whatever reason you are restricted to use python lists, you can convert them to numpy arrays using</p>
 <blockquote>
 <p>numpy.asarray(foolist)</p>
 </blockquote>
-<p>. One should also note that most standard libraries work with numpy arrays and will not accept python lists as input. Another reason to stick to numpy arrays from the beginning. For whatever reason, if you need to convert a numpy array to a list, you can do so using</p>
+<p>One should also note that most standard libraries work with numpy arrays and will not accept python lists as an input/argument. There's another reason to stick to numpy arrays from the beginning. For reasons that I cannot fathom, if you need to convert a numpy array to a list, you can do so using</p>
 <blockquote>
 <p>fooarray.tolist()</p>
 </blockquote>
+<p>maybe you have a gun to your head and are being made to convert numpy's beautiful arrays into python's crude but effective lists. I'm not judging you.</p>
 <p>There are numerous convenience functions in numpy to do perform array operations. You can refer to the examples <a href="http://docs.scipy.org/doc/numpy/reference/">here</a>.</p>
 <p>If you are trying to append an existing array, a commonly used operation,</p>
 <blockquote>
