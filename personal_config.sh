@@ -9,30 +9,30 @@ elif [ "$key" = "" ]; then
 	echo ""
 	echo "installing python-numpy package"
 	echo ""
-	sudo apt-get install python-numpy
+	sudo apt-get build-dep python-numpy
 	echo ""
 	echo "installing python-matplotlib package"
 	echo ""
-	sudo apt-get install python-matplotlib
+	sudo apt-get build-dep python-matplotlib
 	echo ""
 	echo "installing python-astropy"
 	echo ""
-	sudo apt-get install python-astropy
+	sudo apt-get build-dep python-astropy
 	echo ""
 	echo "installing gnuplot"
 	echo ""
-	sudo apt-get install gnuplot
+	sudo apt-get build-dep gnuplot
 	echo ""
 	echo "installing git"
 	echo ""
-	sudo apt-get install git
+	sudo apt-get build-dep git
 	echo "having installed git, we strongly suggest you create an account on github here - https://github.com/"
 	echo "and follow the instructions provided here - https://help.github.com/articles/generating-ssh-keys/  to link your system to your github account."
 	echo "for now, the repository for the workshop is available at - https://github.com/rahulporuri/astro_data_projects"
 	echo ""
 	echo "installing vim"
 	echo ""
-	sudo apt-get install vim
+	sudo apt-get build-dep vim
 	echo "just a reminder, $ vim foo.bar will open the file, i to insert changes in the file, esc to escape the editing mode,"
 	echo ":w can be used to save the file, :q to exit. Take note that :q! can be used to quit without saving"
 	echo "mail us if any problems arise during this installation"
