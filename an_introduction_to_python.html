@@ -1527,6 +1527,228 @@ init_mathjax();
 <body>
 
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="where-are-we">where are we</h1>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>you are currently viewing an ipython notebook file online. If you look at the url closely, it will show you that you are currently looking at a .ipynb file, located in a github repository online, viewed using the nb(notebook) viewer. For those of you familiar with mathematica, the ipython notebook is similar to a mathematica notebook. For the rest, an ipython notebook is a medium in which one can run python code, write elaborate appendices (in LaTeX) explaining the theory behind code and include plots or figures relevant to the code. Simply put, IPython and the IPython notebook are python working environments.</p>
+<p>Working in python and working environments in python are not necessarily the same. If you want to learn or use python, the noob way to do it would be to work on the python prompt, which can be accessed on a unix terminal by typing python. This is how I started learning python, not exactly an easy way to start working in python. Granted, this has taught me a lot of things about python and a few interesting tricks but again, it's easy for someone to get put off by having to work on the python prompt.</p>
+<blockquote>
+<p>'&gt;&gt;&gt;'</p>
+</blockquote>
+<p>An easier way to work in python is by executing python files on the terminal. For those of you comfortable with pre-compiled languages like C or C++, you will notice that python files don't need to be compiled before being executed. Python is a dynamically-typed language, unlike statically-typed languages like C or C++. &gt; $ python foo_bar.py</p>
+<p>you could've also executed files on the python prompt using &gt; '&gt;&gt;&gt;' execfile('foo_bar.py')</p>
+<p>now, coming to working environments, for those of you who have worked on MATLAB before, you'll understand that MATLAB comes with a working environment i.e it installs all of the necessary libraries, it has GUI elements that show the data loaded during execution, it displays the plots using other GUI elements and it has an easy way to search, access and install other packages. Similarly, examples of working environments for python are <a href="">IPython</a>, <a href="">anaconda</a>, <a href="">canopy</a>, <a href="">pyIDE</a>, <a href="">PYcharm</a> and so on and so forth. I have only barely scratched anaconda and canopy and I mostly work on IPython, working on the terminal a few times.</p>
+<p>Vaguely speaking, a working environments makes life easier to work using a specific language. Visualising data accessed by the program is hard while working on the python prompt or the terminal but easy on the working environments. Accessing and installing packages will be a bit of a hassle normally but working environments come with GUI elements that make life easy.</p>
+<p>As I mentioned, I mostly use IPython to code in python, specifically the IPython notebook. IPython comes with <a href="">certain packages pre-installed</a> but the reason I use it the most is because of the IPython notebook, referred to herewith as ipynb. ipynb files have text cells, like this one, and code cells, like what you will see further. The python interpreter executes the code in code cells and the text cells, as I mentioned earlier, help with documentation and comments. One can also include figures or plots in an ipynb file, as you will see further. Overall, using ipynb files helps me find my code, my comments/documentation and my results at the same place.</p>
+<p>So, that's where we are. On an ipython notebook file.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>IPython doesn't come with a python package manager and beginners often get confused as to how to install python packages and there are no executable .exe files in the library/package. It is easier to use a package manager and I use <a href="">pip</a> for this. I urge you to read further about it on your own.</p>
+<p>And if you want to go further, you can setup a <a href="">virtual environment</a> to work in python, where different virtual environments have different packages installed. It might not be necessary for the beginner to have various versions of the same package installed for the various projects he/she's working on but when that day comes, virtual environments is how to solve that problem.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="enough-talk-lets-code.">Enough talk, let's code.</h1>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, assuming that you are comfortable with C, I shall try compare C and python code that perform the same action.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;Hello World&#39;</span>
+<span class="k">print</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+<span class="c"># if you want to print to multiple lines,</span>
+<span class="k">print</span> <span class="s">&#39;Hello&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;World&#39;</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+Hello World
+
+
+Hello 
+World
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&quot;&quot;&quot; #include <stdio.h> void main() { printf ('Hello World'); } &quot;&quot;&quot;</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[6]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">print</span> <span class="s">&#39;the value of a is&#39;</span><span class="p">,</span> <span class="n">a</span>
+<span class="k">print</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+<span class="c"># if you want to specify the</span>
+<span class="c"># data type to be used</span>
+<span class="k">print</span> <span class="s">&#39;the value of a is </span><span class="si">%f</span><span class="s">&#39;</span><span class="p">,</span> <span class="o">%</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_pyerr">
+<pre>
+<span class="ansicyan">  File </span><span class="ansigreen">&quot;&lt;ipython-input-6-668cb74680bb&gt;&quot;</span><span class="ansicyan">, line </span><span class="ansigreen">6</span>
+<span class="ansired">    print &apos;the value of a is %f&apos;, %(a)</span>
+                                  ^
+<span class="ansired">SyntaxError</span><span class="ansired">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>''' #include <stdio.h> void main() { int a; a = 10; printf ('the value of a is %d', %a); } '''</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>you will notice that you didn't have to define the data type of python explicitly, as you did in C. This is because the python interpreter will automatically assign the data type depending on the value which you feed it. notice the difference that a . will make</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">&#39;the value of 1/2 is&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+<span class="k">print</span> <span class="s">&#39;n&#39;</span>
+<span class="k">print</span> <span class="s">&#39;the value of 1/2 is&#39;</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+the value of 1/2 is 0
+n
+the value of 1/2 is 0.5
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>you will also note that we didn't need to include any libraries, like how we include stdio.h in C, to run python programs. the python interpreter takes care of most of the trivial things like defining data types, printing, reading and writing to files, iterating over a variable, arrays or lists and so on. But when it is time to include/refer to a library, it can be done as such</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>where numpy is a library and I am referring to it as np. Libraries in python have a heirarchy, similar to library.module.submodule.function. And inorder to access the function, one has to call library.module.submodule.function(args) on the other hand, we can choose to import the submodule specifically instead of the whole library using import library.module.submodule as sb and then call the function as sb.function(args). taking an example,</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+[]
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="">matplotlib</a> is one of the more commonly used plotting libraries in python. other do exist, such as <a href="">ggplot</a>, <a href="">bokeh</a>, <a href="">d3</a> and so on but I use matplotlib for almost all of my plotting needs in python. it is also interesting to note that ipython and matplotlib work together i.e plots constructed using matplotlib can be inserted into the ipython notebook using</p>
+<p>''' %matplotlib inline '''</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>If you do not want to be bothered with the python working environment and wish to just start directly on the python prompt, be my guest. You can skip the first few sections on virtual environments and jump to hello world.</p>
 <ul>
 <li>virtual environments</li>
