@@ -31,9 +31,9 @@ implemeting the cosmic distance ladder, starting with
 the necessary packages or libraries can be installed by running the shell script in this directory, personal_config.sh.
 it can be run using 
 
-""""
+```
 $ chmod +x personal_config.sh
 $ bash personal_config.sh
-""""
+```
 
 for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
