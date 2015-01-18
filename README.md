@@ -7,7 +7,8 @@ implemented so far -
 * sdss object colors - 100,000 objects from the SDSS DR10.
 * celestial plotting using matplotlib and galactic coordinates for quasars from the SDSS DR10.
 
-to be implemented - 
+to be implemented -
+* polar/pie plot of the quasars from dr10, to show the great wall! and histograms of the redshift
 * galactic distribution of stars and the evident spiral arms! - distance/parallax and l,b/ra,dec data from hipparcos/tycho.
 * color-color diagram for galaxies to differentiate between the spirals and ellipticals.
 * color-distance plots for galaxy clusters to prove that older galaxies lie at the center and that younger ones are at the outskirts.
